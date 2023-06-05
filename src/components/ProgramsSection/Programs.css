@@ -1,0 +1,62 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #fff;
+  padding: 0 2rem;
+}
+.programs__header {
+  display: flex;
+  gap: 5rem;
+  font-weight: bold;
+  font-size: 3rem;
+  justify-content: center;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.programs__categories {
+  display: flex;
+  gap: 1rem;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray);
+  padding: 2rem;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.category > :nth-child(1) {
+  width: 2rem;
+  height: 2rem;
+  fill: #fff;
+}
+.category__heading {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.category__text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.category__btn {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+  justify-content: flex-start;
+}
+.category__btn img {
+  fill: #fff;
+  width: 1rem;
+}
+.category:hover {
+  background: var(--planCard);
+  cursor: pointer;
+}
+.category:hover .category__btn {
+  border-color: transparent;
+}

@@ -105,13 +105,13 @@
 .hero__img {
   position: absolute;
   top: 10rem;
-  right: 15vw;
+  right: 14vw;
   width: 23rem;
 }
 .hero__icon {
   position: absolute;
   top: 4rem;
-  right: 25vw;
+  right: 28vw;
   z-index: -1;
   width: 15rem;
 }
@@ -134,9 +134,12 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.hero__calories span {
+  white-space: nowrap;
+}
 .hero__calories > div > :nth-child(1) {
   color: var(--gray);
 }
-.hero__calories > div > :nth-child(1) {
+.hero__calories > div > :nth-child(2) {
   font-size: 1.5rem;
 }
