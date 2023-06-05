@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 10rem;
+  height: 3rem;
+}
+.nav__list {
+  display: flex;
+  gap: 2rem;
+  color: white;
+}
+.list__item:hover {
+  color: var(--orange);
+  cursor: pointer;
+}

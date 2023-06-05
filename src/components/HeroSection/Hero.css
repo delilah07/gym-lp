@@ -1,0 +1,142 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.hero__left {
+  padding: 1.5rem 2rem 2rem;
+  width: 73vw;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.hero__right {
+  width: 27vw;
+  position: relative;
+  background-color: var(--orange);
+}
+.hero__best {
+  margin-top: 4rem;
+  background-color: #363d42;
+  border-radius: 4rem;
+  width: fit-content;
+  padding: 20px 13px;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.hero__best div {
+  position: absolute;
+  background-color: var(--orange);
+  width: 5.4rem;
+  height: 80%;
+  left: 8px;
+  border-radius: 4rem;
+  z-index: 1;
+}
+.hero__best span {
+  position: relative;
+  z-index: 2;
+}
+.hero__title {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: bold;
+  text-overflow: inherit;
+}
+.hero__text {
+  font-size: 1rem;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 1px;
+  width: 80%;
+}
+.hero__figures {
+  display: flex;
+  gap: 2rem;
+}
+.figure__item {
+  display: flex;
+  flex-direction: column;
+}
+.figure__top {
+  font-size: 2rem;
+}
+.figure__bottom {
+  color: var(--gray);
+  text-transform: uppercase;
+}
+.hero__btns {
+  display: flex;
+  gap: 1rem;
+  font-weight: normal;
+}
+.right__btn {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  width: fit-content;
+}
+.hero__heart-rate {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--darkGrey);
+  width: fit-content;
+  padding: 1rem;
+  align-items: flex-start;
+  border-radius: 5px;
+  position: absolute;
+  right: 4rem;
+  top: 7rem;
+}
+.hero__heart-rate img {
+  width: 2rem;
+}
+
+.hero__heart-rate span:nth-of-type(1) {
+  color: var(--gray);
+}
+.hero__heart-rate span:nth-of-type(2) {
+  font-size: 1.5rem;
+}
+.hero__img {
+  position: absolute;
+  top: 10rem;
+  right: 15vw;
+  width: 23rem;
+}
+.hero__icon {
+  position: absolute;
+  top: 4rem;
+  right: 25vw;
+  z-index: -1;
+  width: 15rem;
+}
+.hero__calories {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--caloryCard);
+  border-radius: 5px;
+  padding: 1rem;
+  width: fit-content;
+  position: absolute;
+  top: 32rem;
+  right: 40vw;
+}
+.hero__calories img {
+  width: 3rem;
+}
+.hero__calories > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero__calories > div > :nth-child(1) {
+  color: var(--gray);
+}
+.hero__calories > div > :nth-child(1) {
+  font-size: 1.5rem;
+}
