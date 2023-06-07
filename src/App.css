@@ -40,6 +40,16 @@ h5,
 h6 {
   color: inherit;
 }
+h2 {
+  display: flex;
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-style: italic;
+}
+h3 {
+  font-weight: bold;
+}
 .border-text {
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -59,14 +69,21 @@ h6 {
 }
 .btn:hover {
   cursor: pointer;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 .btn-orange {
   border-color: var(--orange);
   background-color: var(--orange);
   color: #fff;
 }
+.btn.btn-orange:hover {
+  border: 2px solid white;
+}
+
 .btn-orange-border {
   background-color: transparent;
   color: #fff;
+}
+.btn.btn-orange-border:hover {
+  border: 2px solid var(--orange);
 }
