@@ -7,6 +7,8 @@ import './Plans.css';
 const Plans = () => {
   return (
     <section className="plans">
+      <div className="blur plans__blur plans__blur-1"></div>
+      <div className="blur plans__blur plans__blur-2"></div>
       <h2 className="plans__title">
         <span className="border-text">Ready to start</span>
         <span>your journey</span>

@@ -7,6 +7,22 @@
   align-items: center;
   justify-content: center;
   height: 20rem;
+  position: relative;
+}
+.footer__blur {
+  bottom: 0;
+
+  width: 26rem;
+  height: 12rem;
+  filter: blur(200px);
+}
+.footer__blur-1 {
+  background-color: red;
+  right: 15%;
+}
+.footer__blur-2 {
+  background-color: rgba(255, 115, 0);
+  left: 15%;
 }
 .footer__socials {
   display: flex;

@@ -3,6 +3,7 @@
   display: flex;
   gap: 1rem;
   padding: 0 2rem;
+  align-items: flex-start;
 }
 .testimonials__left {
   display: flex;
@@ -30,6 +31,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
+  margin-top: 2rem;
 }
 .reviews__img {
   width: 17rem;
@@ -44,20 +46,19 @@
   z-index: 2;
   position: relative;
 }
-.reviews__img::before,
-.reviews__img::after {
-  content: '';
+.reviews__img .border,
+.reviews__img .borderBg {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1;
 }
-.reviews__img::before {
+.reviews__img .border {
   border: 2px solid var(--orange);
   top: -1.5rem;
   left: -1.5rem;
 }
-.reviews__img::after {
+.reviews__img .borderBg {
   background: var(--planCard);
   top: 1.5rem;
   left: 1.5rem;

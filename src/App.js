@@ -1,10 +1,10 @@
 import './App.css';
 import Hero from './components/HeroSection/Hero';
-import Plans from './components/Plans/Plans';
+import Plans from './components/PlansSection/Plans';
 import Programs from './components/ProgramsSection/Programs';
-import Reasons from './components/Reasons/Reasons';
-import Testimonials from './components/Testimonials/Testimonials';
-import Join from './components/Join/Join';
+import Reasons from './components/ReasonsSection/Reasons';
+import Testimonials from './components/TestimonialsSection/Testimonials';
+import Join from './components/JoinSection/Join';
 import Footer from './components/Footer/Footer';
 
 function App() {

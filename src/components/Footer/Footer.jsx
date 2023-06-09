@@ -8,19 +8,21 @@ import logo from '../../assets/logo.png';
 const Footer = () => {
   return (
     <footer className="footer">
+      <div className="blur footer__blur footer__blur-1"></div>
+      <div className="blur footer__blur footer__blur-2"></div>
       <ul className="footer__socials">
         <li className="socials__item">
-          <a href="#">
+          <a href="foo">
             <img src={github} alt="" />
           </a>
         </li>
         <li className="socials__item">
-          <a href="#">
+          <a href="foo">
             <img src={instagram} alt="" />
           </a>
         </li>
         <li className="socials__item">
-          <a href="#">
+          <a href="foo">
             <img src={linkedin} alt="" />
           </a>
         </li>

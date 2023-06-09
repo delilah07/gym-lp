@@ -6,6 +6,18 @@
   gap: 3rem;
   position: relative;
 }
+.plans__blur {
+  width: 32rem;
+  height: 23rem;
+}
+.plans__blur-1 {
+  top: 6rem;
+  left: 0;
+}
+.plans__blur-2 {
+  top: 10rem;
+  right: 0;
+}
 .plans__title {
   justify-content: center;
   gap: 5rem;

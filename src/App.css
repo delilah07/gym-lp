@@ -89,3 +89,11 @@ h3 {
 .btn.btn-orange-border:hover {
   border: 2px solid var(--orange);
 }
+
+.blur {
+  background-color: rgba(253, 120, 43, 0.69);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -9;
+}
