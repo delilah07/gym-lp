@@ -29,9 +29,6 @@
   gap: 2rem;
   flex-direction: column;
 }
-.reasons__subtitle {
-  color: var(--orange);
-}
 h2.reasons__title {
   gap: 1.3rem;
 }

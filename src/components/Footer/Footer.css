@@ -1,0 +1,28 @@
+.footer {
+  border-top: 1px solid var(--lightgray);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+}
+.footer__socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.socials__item {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.socials__item:hover {
+  transform: scale(1.1);
+}
+.socials__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
