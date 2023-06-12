@@ -21,8 +21,8 @@ const Reasons = () => {
       <div className="reasons__right">
         <h3 className="reasons__subtitle">some reasons</h3>
         <h2 className="reasons__title">
-          <span className="border-text">Why</span>
-          <span> choose us?</span>
+          <span className="border-text">Why </span>
+          choose us?
         </h2>
         <div className="reasons__details">
           <div className="reasons__detail">

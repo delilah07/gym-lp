@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   const transition = { type: 'spring', duration: 3 };
+  const mobile = window.innerWidth <= 1000 ? true : false;
   return (
     <section className="hero">
       <div className="blur hero__blur"></div>
@@ -16,7 +17,7 @@ const Hero = () => {
         <Header />
         <div className="hero__best">
           <motion.div
-            initial={{ left: '238px' }}
+            initial={{ left: mobile ? '158px' : '238px' }}
             whileInView={{ left: '8px' }}
             transition={{ ...transition, type: 'tween' }}
           ></motion.div>
@@ -67,14 +68,14 @@ const Hero = () => {
           alt="icon of strokes"
           className="hero__icon"
           transition={transition}
-          initial={{ right: '11rem' }}
-          whileInView={{ right: '23rem' }}
+          initial={{ right: '11vw' }}
+          whileInView={{ right: '23vw' }}
         />
         <motion.div
           className="hero__calories"
           transition={transition}
-          initial={{ right: '37rem' }}
-          whileInView={{ right: '30rem' }}
+          initial={{ x: '-7rem' }}
+          whileInView={{ x: '0rem' }}
         >
           <img src={calories} alt="calories icon" />
           <div>

@@ -72,3 +72,42 @@
   transform: scale(1.1);
   cursor: pointer;
 }
+@media screen and (max-width: 1000px) {
+  .reviews__img {
+    width: 13rem;
+    height: 16rem;
+  }
+  .testimonials__left,
+  .testimonials__title {
+    gap: 1rem;
+  }
+  .testimonials__right {
+    justify-content: space-between;
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .testimonials {
+    flex-direction: column;
+  }
+  .testimonials__right {
+    width: 90%;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .testimonials__right {
+    flex-direction: column;
+    margin-right: 0;
+    width: auto;
+    align-self: center;
+  }
+  .review__text {
+    line-height: 30px;
+  }
+  .arrows {
+    order: 2;
+    align-self: center;
+    margin-top: 3rem;
+  }
+}

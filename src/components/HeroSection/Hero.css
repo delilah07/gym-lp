@@ -128,7 +128,7 @@
   width: fit-content;
   position: absolute;
   top: 32rem;
-  right: 40vw;
+  right: 37vw;
 }
 .hero__calories img {
   width: 3rem;
@@ -146,4 +146,59 @@
 }
 .hero__calories > div > :nth-child(2) {
   font-size: 1.5rem;
+}
+@media screen and (min-width: 1450px) {
+}
+@media screen and (max-width: 1250px) {
+  .hero__calories {
+    right: 2vw;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .hero__text {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero__blur {
+    width: 14rem;
+  }
+  .hero__left {
+    width: auto;
+  }
+  .hero__best {
+    margin: 0 auto;
+    font-size: small;
+    transform: scale(0.8);
+  }
+  .hero__title {
+    font-size: xx-large;
+    text-align: center;
+  }
+  .hero__text {
+    font-size: small;
+    font-weight: 200;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .hero__btns {
+    justify-content: center;
+  }
+  .figure__top {
+    font-size: large;
+  }
+  .figure__bottom {
+    font-size: small;
+  }
+  .hero__right {
+    display: none;
+  }
+  .hero__figures {
+    justify-content: center;
+  }
 }

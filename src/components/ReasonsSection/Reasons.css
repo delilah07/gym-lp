@@ -30,7 +30,8 @@
   flex-direction: column;
 }
 h2.reasons__title {
-  gap: 1.3rem;
+  display: block;
+  /* gap: 1.3rem; */
 }
 h2.reasons__title span {
   white-space: nowrap;
@@ -63,4 +64,15 @@ h2.reasons__title span {
 }
 .partners__list img {
   width: 2.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .reasons {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 560px) {
+  .reasons__left {
+    grid-template-rows: 25vh 15vh;
+  }
 }

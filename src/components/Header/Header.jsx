@@ -1,19 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import './Header.css';
 import Logo from '../../assets/logo.png';
+import bars from '../../assets/bars.png';
 
-const Header = () => {
+const Header = (menuOpemFromApp) => {
+  const mobile = window.innerWidth <= 670 ? true : false;
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className="header">
       <img src={Logo} alt="The fit clum" className="header__logo" />
+
       <nav className="header__nav">
-        <ul className="nav__list">
-          <li className="list__item">Home</li>
-          <li className="list__item">Programs</li>
-          <li className="list__item">Why us</li>
-          <li className="list__item">Plans</li>
-          <li className="list__item">Testimonials</li>
-        </ul>
+        {!menuOpen && mobile ? (
+          <div className="header__bars" onClick={() => setMenuOpen(true)}>
+            <img src={bars} alt="choose to open menu" />
+          </div>
+        ) : (
+          <ul className="nav__list">
+            <li onClick={() => setMenuOpen(false)} className="list__item">
+              <Link>Home</Link>
+            </li>
+            <li onClick={() => setMenuOpen(false)} className="list__item">
+              <Link>Programs</Link>
+            </li>
+            <li onClick={() => setMenuOpen(false)} className="list__item">
+              <Link>Why us</Link>
+            </li>
+            <li onClick={() => setMenuOpen(false)} className="list__item">
+              <Link>Plans</Link>
+            </li>
+            <li onClick={() => setMenuOpen(false)} className="list__item">
+              <Link>Testimonials</Link>
+            </li>
+          </ul>
+        )}
       </nav>
     </header>
   );
