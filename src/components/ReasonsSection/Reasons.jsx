@@ -11,7 +11,7 @@ import tick from '../../assets/tick.png';
 
 const Reasons = () => {
   return (
-    <section className="reasons">
+    <section className="reasons" id="reasons">
       <div className="reasons__left">
         <img src={image1} alt="" />
         <img src={image2} alt="" />

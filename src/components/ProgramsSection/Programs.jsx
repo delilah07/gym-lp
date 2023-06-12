@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './Programs.css';
 import { programsData } from '../../data/programsData';
 import RightArrow from '../../assets/rightArrow.png';
@@ -18,10 +19,16 @@ const Programs = () => {
               {program.image}
               <h3 className="category__heading">{program.heading}</h3>
               <p className="category__text">{program.details}</p>
-              <button className="category__btn btn">
-                <span>Join Now</span>
-                <img src={RightArrow} alt="arrow right icon" />
-              </button>
+
+              <Link
+                className="category__btn btn"
+                to="join"
+                span={true}
+                smooth={true}
+              >
+                Join now
+                <img src={RightArrow} alt="arrow right icon" />{' '}
+              </Link>
             </div>
           );
         })}

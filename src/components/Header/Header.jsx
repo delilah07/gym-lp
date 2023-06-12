@@ -18,20 +18,55 @@ const Header = (menuOpemFromApp) => {
           </div>
         ) : (
           <ul className="nav__list">
-            <li onClick={() => setMenuOpen(false)} className="list__item">
-              <Link>Home</Link>
+            <li className="list__item">
+              <Link
+                onClick={() => setMenuOpen(false)}
+                to="hero"
+                span={true}
+                smooth={true}
+              >
+                Home
+              </Link>
             </li>
-            <li onClick={() => setMenuOpen(false)} className="list__item">
-              <Link>Programs</Link>
+            <li className="list__item">
+              <Link
+                onClick={() => setMenuOpen(false)}
+                to="programs"
+                span={true}
+                smooth={true}
+              >
+                Programs
+              </Link>
             </li>
-            <li onClick={() => setMenuOpen(false)} className="list__item">
-              <Link>Why us</Link>
+            <li className="list__item">
+              <Link
+                onClick={() => setMenuOpen(false)}
+                to="reasons"
+                span={true}
+                smooth={true}
+              >
+                Why us
+              </Link>
             </li>
-            <li onClick={() => setMenuOpen(false)} className="list__item">
-              <Link>Plans</Link>
+            <li className="list__item">
+              <Link
+                onClick={() => setMenuOpen(false)}
+                to="plans"
+                span={true}
+                smooth={true}
+              >
+                Plans
+              </Link>
             </li>
-            <li onClick={() => setMenuOpen(false)} className="list__item">
-              <Link>Testimonials</Link>
+            <li className="list__item">
+              <Link
+                onClick={() => setMenuOpen(false)}
+                to="testimonials"
+                span={true}
+                smooth={true}
+              >
+                Testimonials
+              </Link>
             </li>
           </ul>
         )}

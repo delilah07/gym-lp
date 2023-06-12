@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './Hero.css';
 import Header from '../Header/Header';
 import hero_image from '../../assets/hero_image.png';
@@ -11,7 +12,7 @@ const Hero = () => {
   const transition = { type: 'spring', duration: 3 };
   const mobile = window.innerWidth <= 1000 ? true : false;
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="blur hero__blur"></div>
       <div className="hero__left">
         <Header />
@@ -46,12 +47,25 @@ const Hero = () => {
           </li>
         </ul>
         <div className="hero__btns">
-          <button className="btn btn-orange">Get Started</button>
-          <button className="btn btn-orange-border">Learn More</button>
+          <Link className="btn btn-orange" to="plans" span={true} smooth={true}>
+            Get Started
+          </Link>
+
+          <Link
+            className="btn btn-orange-border"
+            to="programs"
+            span={true}
+            smooth={true}
+          >
+            Learn More
+          </Link>
         </div>
       </div>
       <div className="hero__right">
-        <button className="right__btn btn">Join now</button>
+        <Link className="right__btn btn" to="join" span={true} smooth={true}>
+          Join now
+        </Link>
+
         <motion.div
           className="hero__heart-rate"
           transition={transition}

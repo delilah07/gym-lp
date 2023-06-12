@@ -18,7 +18,7 @@ const Testimonials = () => {
   const transition = { type: 'spring', duration: 3 };
 
   return (
-    <section className="testimonials">
+    <section className="testimonials" id="testimonials">
       <div className="testimonials__left">
         <h3 className="reasons__subtitle">some reasons</h3>
         <h2 className="testimonials__title">

@@ -83,7 +83,7 @@
   width: 1rem;
 }
 .features__btn {
-  width: 100%;
+  width: auto;
 }
 
 @media screen and (max-width: 1170px) {

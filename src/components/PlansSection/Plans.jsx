@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import { plansData } from '../../data/plansData';
 import whiteTick from '../../assets/whiteTick.png';
 import RightArrow from '../../assets/rightArrow.png';
@@ -6,7 +7,7 @@ import './Plans.css';
 
 const Plans = () => {
   return (
-    <section className="plans">
+    <section className="plans" id="plans">
       <div className="blur plans__blur plans__blur-1"></div>
       <div className="blur plans__blur plans__blur-2"></div>
       <h2 className="plans__title">
@@ -35,7 +36,14 @@ const Plans = () => {
                 <span>See more benefits</span>
                 <img src={RightArrow} alt="arrow right icon" />
               </p>
-              <button className="features__btn btn">Join Now</button>
+              <Link
+                className="features__btn btn"
+                to="join"
+                span={true}
+                smooth={true}
+              >
+                Join now
+              </Link>
             </div>
           );
         })}
