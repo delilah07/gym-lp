@@ -22,7 +22,7 @@ const Header = (menuOpemFromApp) => {
               <Link
                 onClick={() => setMenuOpen(false)}
                 to="hero"
-                span={true}
+                spy={true}
                 smooth={true}
               >
                 Home
@@ -32,7 +32,7 @@ const Header = (menuOpemFromApp) => {
               <Link
                 onClick={() => setMenuOpen(false)}
                 to="programs"
-                span={true}
+                spy={true}
                 smooth={true}
               >
                 Programs
@@ -42,7 +42,7 @@ const Header = (menuOpemFromApp) => {
               <Link
                 onClick={() => setMenuOpen(false)}
                 to="reasons"
-                span={true}
+                spy={true}
                 smooth={true}
               >
                 Why us
@@ -52,7 +52,7 @@ const Header = (menuOpemFromApp) => {
               <Link
                 onClick={() => setMenuOpen(false)}
                 to="plans"
-                span={true}
+                spy={true}
                 smooth={true}
               >
                 Plans
@@ -62,7 +62,7 @@ const Header = (menuOpemFromApp) => {
               <Link
                 onClick={() => setMenuOpen(false)}
                 to="testimonials"
-                span={true}
+                spy={true}
                 smooth={true}
               >
                 Testimonials

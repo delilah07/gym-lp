@@ -39,7 +39,7 @@ const Plans = () => {
               <Link
                 className="features__btn btn"
                 to="join"
-                span={true}
+                spy={true}
                 smooth={true}
               >
                 Join now

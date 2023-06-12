@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import NumberCounter from 'number-counter';
 import './Hero.css';
 import Header from '../Header/Header';
 import hero_image from '../../assets/hero_image.png';
@@ -34,27 +35,33 @@ const Hero = () => {
         </p>
         <ul className="hero__figures">
           <li className="figure__item">
-            <span className="figure__top">+ 140</span>
+            <span className="figure__top">
+              + <NumberCounter className="increment" end={140} delay={1} />
+            </span>
             <span className="figure__bottom">expert coaches</span>
           </li>
           <li className="figure__item">
-            <span className="figure__top">+ 978</span>
+            <span className="figure__top">
+              + <NumberCounter className="increment" end={978} delay={1} />
+            </span>
             <span className="figure__bottom">members joined</span>
           </li>
           <li className="figure__item">
-            <span className="figure__top">+ 50</span>
+            <span className="figure__top">
+              + <NumberCounter className="increment" end={50} delay={1} />
+            </span>
             <span className="figure__bottom">fitness programs</span>
           </li>
         </ul>
         <div className="hero__btns">
-          <Link className="btn btn-orange" to="plans" span={true} smooth={true}>
+          <Link className="btn btn-orange" to="plans" spy={true} smooth={true}>
             Get Started
           </Link>
 
           <Link
             className="btn btn-orange-border"
             to="programs"
-            span={true}
+            spy={true}
             smooth={true}
           >
             Learn More
@@ -62,7 +69,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero__right">
-        <Link className="right__btn btn" to="join" span={true} smooth={true}>
+        <Link className="right__btn btn" to="join" spy={true} smooth={true}>
           Join now
         </Link>
 

@@ -23,7 +23,7 @@ const Programs = () => {
               <Link
                 className="category__btn btn"
                 to="join"
-                span={true}
+                spy={true}
                 smooth={true}
               >
                 Join now
